@@ -29,6 +29,11 @@
     margin-right: 35px;
     max-width: 500px;
 }
+@media(min-height:1280px) and (max-width: 720px){
+    .middle-section{
+        margin-left: 5px;
+    }
+}
 .right-section{
     width: 180px;
     display: flex;
