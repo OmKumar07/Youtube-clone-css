@@ -37,14 +37,9 @@
     column-gap: 16px;
     row-gap: 40px;
 }
-@media(max-width: 669px){
+@media(min-height:1280px) and (max-width: 720px){
     .video-div{
         grid-template-columns: 1fr;
-    }
-}
-@media(min-width:670px) and (max-width: 750px){
-    .video-div{
-        grid-template-columns: 1fr 1fr;
     }
 }
 @media(min-width:751px) and (max-width:999px){
