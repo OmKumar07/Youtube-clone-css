@@ -28,11 +28,10 @@
     margin-left: 70px;
     margin-right: 35px;
     max-width: 500px;
-}
-@media(min-height:1280px) and (max-width: 720px){
-    .middle-section{
-        margin-left: 5px;
-    }
+    flex-shrink: 0;
+    min-width: 180px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .right-section{
     width: 180px;
@@ -51,13 +50,13 @@
     height: 20px;
 }
 .search-button{
-    height: 40px;
+    height: 40px;/*40 66*/
     width: 66px;
     background-color: rgb(247, 247, 247);
     border-color: rgb(224, 224, 224);
     border-style: solid;
     margin-left: -1px;
-    margin-right: 10px;
+    margin-right: 10px;/*10*/
     position: relative;
 }
 .voice-search-button{
@@ -69,7 +68,7 @@
 }
 .search-bar{
     flex: 1;
-    height: 36px;
+    height: 36px;/*h 36 w 5*/
     padding-left: 10px;
     font-size: 16px;
     border-width: 1px;
@@ -83,10 +82,10 @@
     font-size: 16px;
 }
 .search-icon{
-    height: 25px;
+    height: 25px;/*25*/
 }
 .voice-search-icon{
-    height: 24px;
+    height: 24px;/*24*/
 }
 .upload-icon{
     height: 24px;
@@ -118,6 +117,7 @@
     height: 32px;
     border-radius: 16px;
 }
+
 .search-button .tooltip,.voice-search-button .tooltip,.upload-icon-container .tooltip{
     position: absolute;
     background-color: grey;
@@ -145,4 +145,54 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media(min-height:1280px) and (max-width: 720px){
+    .right-section{
+        flex-shrink: 1;
+    }
+    .middle-section{
+        min-width: 180px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .header{
+        height: 40px;
+    }
+    .ham-menu{
+        margin-right: 5px;
+    }
+    .yt-logo{
+        height: 18px;
+    }
+    .search-button{
+        height: 35px;
+        width: 40px;
+        margin-right: 5px;
+    }
+    .search-bar{
+        height: 31px;
+        width: 3px;
+    }
+    .search-icon{
+        height: 20px;
+    }
+    .voice-search-icon{
+        height: 20px;/*24*/
+    }
+    .upload-icon{
+        height: 20px;
+    }
+    .youtube-apps{
+        height: 20px;
+    }
+    
+    .notification-icon{
+        height: 20px;
+    }
+    .notification-icon-container{
+        margin-right: 70px;
+    }
+    .current-user-picture{
+        margin-left: -70px;
+    }
 }
